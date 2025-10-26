@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menu de restaurante</title>
+    </head>
+    <body>
+      <header>
+            <img src="https://www.shutterstock.com/image-vector/mcdonalds-corporation-worlds-largest-chain-260nw-2388102779.jpg" alt="logo del restaurante" id="header-img"> 
+            <h1>Samuel's</h1>
+
+            <nav aria-label="Navegacion Principal">
+                <ul>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#formulario-de-pedido">Realizar pediddo</a></li>
+                </ul>
+            </nav>
+      </header>
+    
+      <main>
+        <section id="menu" aria-labelledby="menu-title">
+            <h2 id="menu-title">Menú</h2>
+            <ul>
+                <li>
+                    <article>
+                        <h3>Pastas Bolognesa - <i>24.000$</i></h3>
+                        <img src="https://www.unileverfoodsolutions.com.co/dam/global-ufs/mcos/nola/colombia/calcmenu/recipes/CO-recipes/pasta-dishes/pasta-en-salsa-bolognesa/main-header.jpg" width="200" alt="Pastas Bolognesa"> 
+                        <p>Pastas con trozos de carne, tomate y salsa</p>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3>Hamburguesa de res - <i>22.000$</i></h3>
+                        <img src="https://www.realsimple.com/thmb/z3cQCYXTyDQS9ddsqqlTVE8fnpc%3D/1500x0/filters%3Ano_upscale%28%29%3Amax_bytes%28150000%29%3Astrip_icc%28%29/real-simple-mushroom-black-bean-burgers-recipe-0c365277d4294e6db2daa3353d6ff605.jpg" width="200" alt="hamburguesa de res">
+                    </br>
+                        <p>Hamburguesa clasica con tomate, cebolla, salsas, lechuga, queso derretido y carne de res</p>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3>ensalada cesar - <i>18.000$</i></h3>
+                        <img src="https://www.seriouseats.com/thmb/Fi_FEyVa3_-_uzfXh6OdLrzal2M%3D/1500x0/filters%3Ano_upscale%28%29%3Amax_bytes%28150000%29%3Astrip_icc%28%29/the-best-caesar-salad-recipe-06-40e70f549ba2489db09355abd62f79a9.jpg" width="200" alt="Ensalada Cesar">
+                        <p>Lechuga romana y croûtons (trozos de pan tostado) con jugo de limón, aceite de oliva, huevo, salsa Worcestershire, anchoas, pollo, ajo, mostaza de Dijon (opcional), queso parmesano y pimienta negra.</p>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3>Pizza a su gusto - <i>25.000$</i></h3>
+                        <img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?fm=jpg" width="200" alt="Pizza">
+                        <p>Puede escoger los ingredientes de la pizza (maximo 5)</p>
+                    </article>
+                </li>
+                    <article>
+                        <h3>Bebidas</h3>
+                        <p>Tenemos disponibles las siguientes bebidas: <ul>
+                            <li>Gaseosa (coca-cola, manzana, uva, pepsi, colombiana) - <i>5.000$</i></li> <img src="https://images.pexels.com/photos/5860659/pexels-photo-5860659.jpeg" width="200" alt="gaseosas"> 
+                            <br> <br> <br>
+                            <li>Limonada natural, mangobiche, de cereza - <i>12.000$</i></li> <img src="https://images.pexels.com/photos/9259573/pexels-photo-9259573.jpeg" width="200" alt="limonadas">
+                            <br> <br> <br>
+                            <li>Malteadas de chocolate y fresa - <i>15.000$</i></li> <img src="https://images.pexels.com/photos/13185299/pexels-photo-13185299.jpeg" width="200" alt="malteada">
+                            <br> <br> <br>
+                            <li>Agua con gas - <i>5.000$</i></li> <img src="https://images.pexels.com/photos/9009821/pexels-photo-9009821.jpeg" width="200" alt="agua">
+                            <br> <br> <br>
+                            <li>Jugos naturales como: naranja, mandarina, mora, frutos rojos - <i>8.000$</i></li> <img src="https://images.pexels.com/photos/161440/smoothie-fruit-vegetables-salad-beetroot-carrots-161440.jpeg" width="200" alt="Jugos">
+                        </ul></p>
+                    </article>
+                </li>
+             </ul>
+        </section>
+
+        <section id="formulario-de-pedido" aria-labelledby="pedido-title">
+            <h2 id="pedido-title">Realizar pedido</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Informacion del usuario</legend>
+                <label for="Nombre">Nombre de usuario</label>
+                <input id="name" name="Nombre" type="text" placeholder="Ingrese su nombre" required>
+                </fieldset>
+                <br><br>
+                <fieldset>
+                <label for="qty-pastas-bolognesa">Pastas Bolognesa (24.000$)</label>
+                <input id="qty-pastas-bolognesa" name="qty-pastas-bolognesa" type="number" min="0" max="10">
+
+                <label for="qty-Hamburguesa-de-res">Hamburguesa de res (22.000$)</label>
+                <input id="qty-Hamburguesa-de-res" name="qty-Hamburguesa-de-res" type="number" min="0" max="10">
+
+                <label for="qty-ensalada-cesar">Ensalada Cesar (18.000$)</label>
+                <input id="qty-ensalada-cesar" name="qty-ensalada-cesar" type="number" min="0" max="10">
+
+                <label for="qty-pizza-a-su-gusto">Pizza a su gusto (25.000$)</label>
+                <input id="qty-pizza-a-su-gusto" name="qty-pizza-a-su-gusto" type="number" min="0" max="10">
+                </fieldset>
+                <br>
+                <fieldset>
+                <legend>Direccion de envio</legend>
+                 <label for="direccion">Direccion</label>
+                <input id="direccion" name="direccion" type="type" placeholder="Escriba a donde va dirigido" required>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Seleccione su bebida</legend>
+                    <input type="checkbox">Gaseosa<br>
+                    <input type="checkbox">Limonada<br>
+                    <input type="checkbox">Malteada<br>
+                    <input type="checkbox">Agua con gas<br>
+                    <input type="checkbox">Jugo natural<br>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Adiciones</legend>
+                    <input type="radio" name="adicion"><i>Queso extra - 3.000$</i><br>
+                    <input type="radio" name="adicion"><i>Pico de gallo - 2.000$</i><br>
+                    <input type="radio" name="adicion"><i>Papas extra - 3.500$</i><br>
+                    <input type="radio" name="adicion"><i>Porcion de chicharron - 4.000$</i></input>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Metodos de pago</legend>
+                    <input type="radio" name="pago">Tarjeta de credito o debito<br>
+                    <input type="radio" name="pago">Efectivo<br>
+                    <input type="radio" name="pago">Transferencia bancaria (nequi o bancolombia)<br>
+                    <input type="radio" name="pago">Puntos de fidelidad<br>
+                </fieldset>
+                <br>
+                <fieldset>
+                 <legend>Especiales</legend>
+                 <label for="pedidos especiales"></label>
+                 <textarea id= "pedidos especiales" name="Pedidos especiales" rows="7" cols="42" placeholder="Escriba aqui si quiere que escribamos o hagamos algo en algun pedido :3"></textarea>
+                </fieldset>
+                <br> <br>
+                <input type="submit" value="Ir a la caja">      
+            </form>
+        </section>
+      </main>
+      <br> <br> <br> <br> <br> 
+
+      <footer>
+    <p>
+      Horarios del restaurante: Lunes a Viernes 12:00pm a 10:00pm. Sábado y Domingo 4:00pm a 11:00pm.<br>
+      Calle 65 #42-72, Villa Hermosa.<br>
+      Hecho con amor por samuelvill56268.
+    </p>
+  </footer>
+    </body>
+</html>
+
